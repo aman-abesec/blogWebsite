@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=element.title%></title>
+    <link href="/css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+
+    <div class="container mb-3 shadow" >
+        <div class="d-flex position-relative p-4">
+           <div>
+               <div class="d-flex">
+              <h3 class="mt-0 me-auto"><%=element.title%></h3>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+              <p><%=element.description%></p>
+              <div>
+                <%-element.content%>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    <%- include("partials/footer.ejs") %>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>

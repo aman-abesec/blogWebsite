@@ -1,0 +1,20 @@
+<div class="container mx-5 py-5">
+    <h3>Create New Blog</h3>
+    <form action="/new-blog" method="post">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Blog Title</label>
+            <input name="blogTittle" type="text" class="form-control" id="exampleFormControlInput1" placeholder="About C-language." required autocomplete="off">
+        </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Descriptions</label>
+            <input name="blogDescriptions" type="text" class="form-control" id="exampleFormControlInput2" placeholder="Short Descriptions....." required autocomplete="off">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Blog Content</label>
+            <textarea id="editor" name="blogContent" class="form-control" id="exampleFormControlTextarea1" rows="5" required draggable="false"></textarea>
+          </div>
+          <button class="btn btn-primary">Post</button>
+    </form>
+</div>

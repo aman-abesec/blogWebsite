@@ -1,0 +1,12 @@
+#featured .feature-icon{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    background-color: #0d6efd;
+}
+
+#featured .feature-icon svg{
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+}
